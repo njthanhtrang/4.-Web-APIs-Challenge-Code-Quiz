@@ -110,10 +110,8 @@ var answerClick = function(event) {
     event.preventDefault();
     var userAnswer = event.target.textContent;
     correctAnswer = questions[currentQuestionIndex].correct;
-    console.log("userAnswer", userAnswer);
     // determine if answer is wrong or right
     var answerDetermination = document.querySelector("#answer-determination");
-    console.log(correctAnswer);
     if (userAnswer !== correctAnswer) {
         adjustTime(-10);
         answerDetermination.textContent = "Wrong!";
@@ -121,7 +119,6 @@ var answerClick = function(event) {
         if (currentQuestionIndex >= questions.length) {
             endQuizPage();
         } else {renderQuestion(questions[currentQuestionIndex])};
-        console.log(userAnswer);
 
     }
     else if (userAnswer === correctAnswer) {
@@ -178,12 +175,22 @@ function endQuizPage() {
 
     submitInitialBtn.addEventListener("click", () => {
         // rest variable
+        
+        if (initialBox.value.length === 0) return false;
+
         let storeInitials = (...input) => {
             let data = JSON.stringify({ "name":input[0], "score":input[1]})
             localStorage.setItem("object", data)
         }
         storeInitials(initialBox.value, userScore);
 
+        var playAgain = document.createElement("button");
+        playAgain.textContent= "Play Again!";
+        blank.appendChild(playAgain);
+
+        playAgain.addEventListener("click", () => {
+            location.reload();
+        })
     });
 
     // if (initialInput === "") {
