@@ -16,7 +16,7 @@ This is a timed coding quiz that utilizes JavaScript fundamentals to store high 
 Created by Jennifer Nguyen with the gracious help of TAs Wesley Tran, John Baxter and Roody Jointer.
 
 # Website
-https://njthanhtrang.github.io/3.-JavaScript-Challenge-Password-Generator/.
+https://njthanhtrang.github.io/4.-Web-APIs-Challenge-Code-Quiz/.
 
 # License
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
