@@ -1,16 +1,19 @@
 body {
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: lightpink;
 }
 
 button {
     padding: 5px;
     margin: 10px;
     border-radius: 30px;
-    background-color: lightpink;
+    background-color: white;
 }
 
 .quiz-container button {
     justify-content: center;
     display: block;
+    margin: 10px;
+    margin-left: 500px;
 }
