@@ -193,14 +193,6 @@ function endQuizPage() {
         })
     });
 
-    // if (initialInput === "") {
-    //     var nullInitial = document.createElement("p");
-    //     nullInitial.textContent="Please enter your initials!";
-    //     return false;
-    // } else {
-    //     displayMessage('saved', 'Saved successfully');
-    // }
-    // initialBox.reset();
     document.querySelector("input").value = "";
 
     initialBox.addEventListener("submit", endQuizPage);
