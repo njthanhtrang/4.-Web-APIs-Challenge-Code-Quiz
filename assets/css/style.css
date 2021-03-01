@@ -13,7 +13,6 @@ button {
 
 .quiz-container button {
     justify-content: center;
-    display: block;
+    display: flex block;
     margin: 10px;
-    margin-left: 500px;
 }
