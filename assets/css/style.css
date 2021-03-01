@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.quiz-container button {
+    justify-content: center;
+    display: block;
+}
